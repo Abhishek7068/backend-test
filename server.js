@@ -16,7 +16,7 @@ const db = new sqlite3.Database(':memory:', (err) => {
     } else {
         console.log('Connected to SQLite database');
         db.run(`CREATE TABLE products (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            id INTEGER PRIMARY KEY AUTOINCREMENT
             name TEXT NOT NULL,
             description TEXT NOT NULL,
             price REAL NOT NULL,
